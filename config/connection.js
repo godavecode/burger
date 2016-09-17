@@ -10,14 +10,14 @@ var source = {
 	},
 	livehost: {
 		port: 3306,
-		host: 'd6q8diwwdmy5c9k9.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
-		user: 'vnhzm1oaaipbpuef',
-		password: 'ayzw4lhggczakoav',
-		database: 'mhnmixpemvns73fj'
+		host: 'sp6xl8zoyvbumaa2.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
+		user: 'ris0xjgswyh69f2i',
+		password: 'lw3m0ue9c2jd4xlc',
+		database: 'i78jy3l6392r8gj9'
 	}
 }
 
-var connection = mysql.createConnection(process.env.JAWSDB_URL);
+var connection = mysql.createConnection(source.livehost);
 
 connection.connect(function(err) {
 	if (err) {
